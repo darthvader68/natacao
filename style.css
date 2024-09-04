@@ -10,27 +10,86 @@ cor-04 #4485ff
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #0638ae;
     color: white;
+}
+
+body {
+    height: 100%;
+    background-image: url(img/bacground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
 header h1 {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     font-size: 2em;
 }
 
-.container {
-    display: block;
-    flex-direction: column;
-    justify-content: space-between;
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+
 }
 
-img {
-    width: 360px;
-    height: 350px;    
+.img_portfolio {
+    background-color: aliceblue;
+    width: 50vw;
+    height: 50%;
+}
+
+.img_portfolio img {
+    width: 100%;
+    height: 100vh;
+}
+
+.icons_portfolio {
+    width: 50vw;
+    height: 50%;
+}
+
+.portfolio .icons_portfolio a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0 60px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icons_portfolio button {
+    display: flex;
+    background-color: #FDFE4A;
+    width: 300px;
+    height: 60px;
+    margin: 30px;
+    padding: 20px;
+    transition: 0.5s;
+    color: black;
+    justify-content: space-between;
+    text-align: center;
+    border: none;
     border-radius: 10px;
+}
+
+.portfolio .icons_portfolio button i,.portfolio .icons_portfolio button p {
+    font-size: 20px;
+    color: black;
+}
+
+.portfolio .icons_portfolio button:hover {
+    background-color: black;
+}
+
+.portfolio .icons_portfolio button:hover i, .portfolio .icons_portfolio button:hover p {
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    padding: 20px;
 }
 
