@@ -127,6 +127,16 @@ footer p {
 /* media query for smartphone */
 @media screen and (max-width: 480px)
  {
+    header h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+        padding: 20px;
+        font-size: 2em;
+    }
+
     .portfolio {
         display: block;
         flex-direction: column;
